@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <link rel="stylesheet" href="normalize.css">
+    <style>
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 30px;
+            background-color: lightblue;
+        }
+        .flexheader {
+            display: flex;
+            justify-content: center;
+        }
+
+        .general {
+            display: flex;
+            background-color: rgb(228, 194, 180);
+        }
+
+        .flexsection {
+            display: flex;
+            flex: 1;
+            align-items: stretch;
+            min-height: 100vh;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .flex1 {
+            display: flex;
+            flex: 1;
+            justify-content: space-around;
+            background-color: lightsalmon;
+        }
+
+        .flex2 {
+            display: flex;
+            flex: 1;
+            justify-content: center;
+            background-color: lightsalmon;
+
+        }
+        
+        .flexaside {
+            display: flex;
+            background-color: lightskyblue;
+        }
+
+        .flexfooter {
+            display: flex;
+            justify-content: space-around;
+            background-color: lightslategray;
+            flex: 1;
+            align-items: stretch;
+            min-height: 20vh;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="flexheader">
+        <div>Шапка страницы</div>
+    </header>
+    <div class="general">
+        <section class="flexsection">Основная часть
+            <div class="flex1">
+                <div>Еще 1</div>
+                <div>Еще 2</div>
+            </div>
+            <div class="flex2">Еще 3</div>
+        </section>
+        <aside class="flexaside">Боковая часть</aside>
+    </div>
+    <footer class="flexfooter">
+        <div>Секция 1</div>
+        <div>Секция 1</div>
+        <div>Секция 1</div>
+        <div>Секция 1</div>
+    </footer>
+</body>
+
+</html>
